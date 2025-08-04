@@ -1,0 +1,24 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "abcb4b0e7b9babf35617b0b7a8692a66"
+name = "app-nodejs"
+handle = "app-nodejs-3"
+application_url = "https://concerned-attempts-guided-norm.trycloudflare.com"
+embedded = true
+
+[build]
+include_config_on_deploy = true
+automatically_update_urls_on_dev = true
+
+[webhooks]
+api_version = "2025-07"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = ["https://concerned-attempts-guided-norm.trycloudflare.com/auth/callback", "https://concerned-attempts-guided-norm.trycloudflare.com/auth/shopify/callback", "https://concerned-attempts-guided-norm.trycloudflare.com/api/auth/callback"]
+
+[pos]
+embedded = false
